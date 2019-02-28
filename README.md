@@ -3,6 +3,8 @@ Disabled LSPDFR version checking, which allows Albo1125's other mods (Traffic Po
 
 Compiled DLL uploaded to LSPDFR.com.
 
+# \/ORIGINAL README\/
+
 # Albo1125.Common
 Albo1125.Common is a helper plugin for all my other GTA5 and LSPDFR plugins.
 
