@@ -40,7 +40,7 @@ namespace Albo1125.Common
 
         public static bool DependencyCheckMain(string CallingPlugin, Version Albo1125CommonVer, float MinimumRPHVersion, string installationVideoURL, Version MadeForGTAVersion = null, Version MadeForLSPDFRVersion = null, Version RAGENativeUIVersion = null, string[] AudioFilesToCheckFor = null, string[] OtherRequiredFilesToCheckFor = null)
         {
-            bool CheckPassedSuccessfully = true;
+            bool CheckPassedSuccessfully = true; //Automatically set to true. Set to false only if there is a problem.
             Game.LogTrivial("Albo1125.Common.dll " + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " starting standard dependency check for " + CallingPlugin);
             if (scid == null)
             {
@@ -67,7 +67,7 @@ namespace Albo1125.Common
                         if (File.Exists("Plugins/LSPD First Response.dll"))
                         {
                             Version InstalledLSPDFRVer = new Version(FileVersionInfo.GetVersionInfo("Plugins/LSPD First Response.dll").ProductVersion);
-                            if (InstalledLSPDFRVer.CompareTo(MadeForLSPDFRVersion) != 0)
+                            if (false) //This line was changed in order to facilitate bypass of the LSPDFR version check
                             {
                                 Game.LogTrivial(CallingPlugin + " compatibility warning: Different LSPD First Response.dll version detected, use at your own risk! This mod was made for LSPDFR " + MadeForLSPDFRVersion.ToString());
                                 //Plugins_URL_Errors.Add(CallingPlugin, installationVideoURL, "Detected invalid LSPD First Response.dll version. To run this mod, you need LSPDFR " + MadeForLSPDFRVersion.ToString());
