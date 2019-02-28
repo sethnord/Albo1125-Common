@@ -1,7 +1,7 @@
 # Version Checking Bypass By sethnord
 Disabled LSPDFR version checking, which allows Albo1125's other mods (Traffic Policer, Arrest Manager, etc) to run on LSDPFR version 0.4
 
-Compiled DLL will be uploaded to LSPDFR.com if license allows it.
+Compiled DLL uploaded to LSPDFR.com.
 
 # Albo1125.Common
 Albo1125.Common is a helper plugin for all my other GTA5 and LSPDFR plugins.
